@@ -27,7 +27,7 @@ notes.delete('/:note_id', (req, res) => {
     readFromFile('./db/notes.json')
       .then((data) => JSON.parse(data))
       .then((json) => {
-        const result = json.filter((note) => note.note_id !== noteId);
+        const result = json.filter((note) => note.note_id == noteId);
         console.log('noteId:', noteId);
         console.log('json:', json);
         console.log('result:', result);
