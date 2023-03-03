@@ -12,7 +12,7 @@
 
 - (IF RUNNING LOCALLY) after you've installed it and run the `npm start` in the terminal. You can 'CMD + click' on the http location given to you in the console.
 
-- If you want to run it through on the good ole' internet here's the [link](https://jgs-note-taker.herokuapp.com/)
+- If you want to run it through the good ole' internet here's the [link](https://jgs-note-taker.herokuapp.com/)
 
 - Whatever route you chose to run it, its pretty simple from there. Just input a title for your note and then whatever you desire to put into the note. A save button will appear after both criteria have been met and from there you can save it. Your saved notes will appear on the left column and if you click it, it will be displayed so you can view the contents of the note on the right column.
 
