@@ -7,11 +7,11 @@ notes.get('/', ( req, res ) => {
 });
 
 notes.get('/:note_id', (req, res) => {
-    const noteId = req.params.note_id;
+    const noteId = req.params.id;
     readFromFile('./db/notes.json')
       .then((data) => JSON.parse(data))
       .then((json) => {
-        const result = json.filter((note) => note.note_id === noteId);
+        const result = json.filter((note) => note.id === noteId);
         console.log('noteId:', noteId);
         console.log('json:', json);
         console.log('result:', result);
@@ -23,11 +23,11 @@ notes.get('/:note_id', (req, res) => {
   });
   
 notes.delete('/:note_id', (req, res) => {
-    const noteId = req.params.note_id;
+    const noteId = req.params.id;
     readFromFile('./db/notes.json')
       .then((data) => JSON.parse(data))
       .then((json) => {
-        const result = json.filter((note) => note.note_id == noteId);
+        const result = json.filter((note) => note.id == noteId);
         console.log('noteId:', noteId);
         console.log('json:', json);
         console.log('result:', result);
@@ -46,7 +46,7 @@ notes.post('/', (req, res) => {
       const newNote= {
         title,
         text,
-        note_id: uuidv4(),
+        id: uuidv4(),
       };
   
       readAndAppend(newNote, './db/notes.json');
