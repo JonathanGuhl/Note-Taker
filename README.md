@@ -10,7 +10,7 @@
 
 ## Usage
 
-- (IF RUNNING LOCALLY) after you've installed it and run the `npm start` in the terminal. You can 'CMD + click' on the location given to you in the console which will be 'https://localhost:3001'
+- (IF RUNNING LOCALLY) after you've installed it and run the `npm start` in the terminal. You can 'CMD + click' on the http location given to you in the console.
 
 - If you want to run it through on the good ole' internet here's the [link](https://jgs-note-taker.herokuapp.com/)
 
